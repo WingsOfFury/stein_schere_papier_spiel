@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Stein,Schere,Papier Spiel</title>
+</head>
+<body>
+    <h1>Let's play Stein, Papier, Schere!</h1>
+    <main>
+      <details class="rules-container">
+        <summary>Spielregeln</summary>
+
+        <p>Du spielst gegen den Computer.</p>
+        <p>Du kannst zwischen Stein, Papier und Schere wählen.</p>
+        <p>Wer zuerst drei Punkte hat, gewinnt.</p>
+
+        <p>Hier sind die Regeln, um im Spiel einen Punkt zu bekommen:</p>
+        <ul>
+          <li>Stein schlägt Schere</li>
+          <li>Schere schlägt Papier</li>
+          <li>Papier schlägt Stein</li>
+        </ul>
+        <p>
+            Wenn der Spieler und der Computer dieselbe Option wählen (z. B. Papier und
+            Papier), dann bekommt niemand den Punkt.
+        </p>
+      </details>
+
+      <div class="score-container">
+        <strong
+          >Spieler Punktezahl: <span class="score" id="player-score">0</span></strong
+        >
+        <strong
+          >Computer Punktezahl:
+          <span class="score" id="computer-score">0</span></strong
+        >
+      </div>
+
+      <section class="options-container">
+        <h2>
+            Wähle eine Option:</h2>
+        <div class="btn-container">
+          <button id="rock-btn" class="btn">Stein</button>
+          <button id="paper-btn" class="btn">Papier</button>
+          <button id="scissors-btn" class="btn">Schere</button>
+        </div>
+      </section>
+
+      <div class="results-container">
+        <p id="results-msg"></p>
+        <p id="winner-msg"></p>
+        <button class="btn" id="reset-game-btn">Nochmal spielen?</button>
+      </div>
+    </main>
+
+
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
